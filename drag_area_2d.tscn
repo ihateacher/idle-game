@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3 uid="uid://b6dvoa8g7ijt7"]
+
+[ext_resource type="Script" uid="uid://c4gbaj2a62tlt" path="res://drag_area_2d.gd" id="1_fkhpu"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tr34o"]
+size = Vector2(118, 118)
+
+[node name="DragArea2D" type="Area2D"]
+script = ExtResource("1_fkhpu")
+mouse_test = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_tr34o")
+
+[node name="Label" type="Label" parent="."]
+visible = false
+offset_left = -14.0
+offset_top = 2.0
+offset_right = 60.0
+offset_bottom = 25.0
+text = "mouse_in"
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]
+[connection signal="mouse_exited" from="Label" to="." method="_on_label_mouse_exited"]

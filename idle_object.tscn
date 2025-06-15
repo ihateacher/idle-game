@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://dqtkor3idp341"]
+
+[ext_resource type="Texture2D" uid="uid://bpkwidbj1wlyt" path="res://icon.svg" id="1_w55v7"]
+[ext_resource type="PackedScene" uid="uid://b6dvoa8g7ijt7" path="res://drag_area_2d.tscn" id="2_b7lib"]
+
+[node name="IdleObject" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_w55v7")
+
+[node name="DragArea2D" parent="." instance=ExtResource("2_b7lib")]

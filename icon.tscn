@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://cax7kmvl88i6r"]
+
+[ext_resource type="Script" uid="uid://da60t5fh5fv1k" path="res://icon.gd" id="2_hqyvl"]
+[ext_resource type="PackedScene" uid="uid://b6dvoa8g7ijt7" path="res://drag_area_2d.tscn" id="3_otv2m"]
+
+[node name="Icon" type="Node2D"]
+script = ExtResource("2_hqyvl")
+
+[node name="DragArea2D" parent="." instance=ExtResource("3_otv2m")]
+position = Vector2(2, -1)
