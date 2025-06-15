@@ -6,6 +6,8 @@
 [node name="IdleObject" type="Node2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.3, 0.3)
 texture = ExtResource("1_w55v7")
 
 [node name="DragArea2D" parent="." instance=ExtResource("2_b7lib")]
+mouse_test = false

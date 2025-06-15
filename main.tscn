@@ -14,4 +14,4 @@ mouse_filter = 2
 script = ExtResource("1_0xm2m")
 
 [node name="IdleObject" parent="." instance=ExtResource("1_ig7tw")]
-position = Vector2(71, 77)
+position = Vector2(62, 61)

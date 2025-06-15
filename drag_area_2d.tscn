@@ -10,6 +10,7 @@ script = ExtResource("1_fkhpu")
 mouse_test = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(0.3, 0.3)
 shape = SubResource("RectangleShape2D_tr34o")
 
 [node name="Label" type="Label" parent="."]

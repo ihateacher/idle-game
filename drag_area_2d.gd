@@ -21,26 +21,20 @@ func _input(event: InputEvent):
 
 func _physics_process(delta: float) -> void:
 	if dragging:
-		#var mouse_position :Vector2= DisplayServer.mouse_get_position()
-		#mouse_position.x += 0.5 * get_viewport_rect.
-		#+ 1/2 * get_viewport_rect().
-		DisplayServer.window_set_position(DisplayServer.mouse_get_position() - Vector2i(0.5*get_viewport_rect().size))
-		
-		#print("Mouse Position:%s \n Window Position" % [get_global_mouse_position(), DisplayServer.window_get_position()])
-		#get_parent().global_position = get_global_mouse_position()
+
+		DisplayServer.window_set_position(DisplayServer.mouse_get_position() 
+		- Vector2i(0.5 * get_viewport_rect().size))
 
 
 
 func _on_mouse_entered() -> void:
-	if mouse_test:
-		label.show()
-		is_mouse_in = true
-		print(is_mouse_in)
+	#if mouse_test:
+		#label.show()
+	is_mouse_in = true
 		
 
 
 func _on_mouse_exited() -> void:
-	if mouse_test:
-		is_mouse_in = false
-		label.hide()
-		print(is_mouse_in)
+	#if mouse_test:
+		#is_mouse_in = false
+	label.hide()
