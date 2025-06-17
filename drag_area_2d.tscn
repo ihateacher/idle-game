@@ -3,15 +3,17 @@
 [ext_resource type="Script" uid="uid://c4gbaj2a62tlt" path="res://drag_area_2d.gd" id="1_fkhpu"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tr34o"]
-size = Vector2(118, 118)
+size = Vector2(100, 100)
 
 [node name="DragArea2D" type="Area2D"]
+position = Vector2(248, 187)
 script = ExtResource("1_fkhpu")
 mouse_test = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-scale = Vector2(0.3, 0.3)
+position = Vector2(-49, 13)
 shape = SubResource("RectangleShape2D_tr34o")
+debug_color = Color(0, 0.6, 0.701961, 0.254902)
 
 [node name="Label" type="Label" parent="."]
 visible = false

@@ -1,0 +1,11 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://chxf6ulnjt4o6"]
+
+[ext_resource type="Shader" uid="uid://2grs7qqk681k" path="res://shadow.gdshader" id="1_muiic"]
+
+[resource]
+shader = ExtResource("1_muiic")
+shader_parameter/shadow_color = Color(0, 0, 0, 0.3)
+shader_parameter/shadow_scale = -0.405
+shader_parameter/shadow_min_length = 2.0
+shader_parameter/shadow_max_length = 10.0
+shader_parameter/screen_center = Vector2(250, 250)

@@ -13,5 +13,11 @@ grow_vertical = 2
 mouse_filter = 2
 script = ExtResource("1_0xm2m")
 
-[node name="IdleObject" parent="." instance=ExtResource("1_ig7tw")]
+[node name="Cockroach" parent="." instance=ExtResource("1_ig7tw")]
 position = Vector2(62, 61)
+
+[node name="ChasingTimer2" type="Timer" parent="Cockroach"]
+wait_time = 2.0
+autostart = true
+
+[connection signal="timeout" from="Cockroach/ChasingTimer2" to="Cockroach" method="_on_chasing_timer_timeout"]

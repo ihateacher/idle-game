@@ -7,6 +7,7 @@ extends Area2D
 var dragging = false
 
 
+
 # 监听全局输入事件
 func _input(event: InputEvent):
 
@@ -21,7 +22,6 @@ func _input(event: InputEvent):
 
 func _physics_process(delta: float) -> void:
 	if dragging:
-
 		DisplayServer.window_set_position(DisplayServer.mouse_get_position() 
 		- Vector2i(0.5 * get_viewport_rect().size))
 
