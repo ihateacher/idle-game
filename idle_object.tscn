@@ -470,7 +470,7 @@ _data = {
 &"shake": SubResource("Animation_vvb2k")
 }
 
-[node name="IdleObject" type="Node2D"]
+[node name="IdleObject" type="CharacterBody2D"]
 script = ExtResource("1_c6ysr")
 
 [node name="Pivot" type="Marker2D" parent="."]
@@ -599,8 +599,3 @@ libraries = {
 }
 
 [node name="ChasingTimer" type="Timer" parent="."]
-
-[node name="DirectionalLight2D" type="DirectionalLight2D" parent="."]
-energy = 0.1
-
-[connection signal="timeout" from="ChasingTimer" to="." method="_on_chasing_timer_timeout"]

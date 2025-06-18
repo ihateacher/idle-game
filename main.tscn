@@ -20,4 +20,7 @@ position = Vector2(62, 61)
 wait_time = 2.0
 autostart = true
 
+[node name="DirectionalLight2D" type="DirectionalLight2D" parent="."]
+energy = 0.05
+
 [connection signal="timeout" from="Cockroach/ChasingTimer2" to="Cockroach" method="_on_chasing_timer_timeout"]

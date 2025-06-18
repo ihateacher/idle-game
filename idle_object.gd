@@ -1,9 +1,8 @@
 extends Node2D
 
 
-@export var min_distance = 200
-@export var max_distance = 400
-
+@export var min_distance = 350
+@export var max_distance = 600
 @onready var animation_player: AnimationPlayer = $AnimationPlayer
 @onready var pivot: Marker2D = $Pivot
 @export var move_speed = 600
